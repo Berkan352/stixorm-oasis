@@ -1,0 +1,60 @@
+{
+    "type": "bundle",
+    "id": "bundle--4039d7da-1139-4e36-b2de-5a8172540b93",
+    "objects": [
+        {
+            "type": "ipv4-addr",
+            "spec_version": "2.1",
+            "id": "ipv4-addr--7dd44d27-f473-5ba9-b12b-0d3a61bbed2e",
+            "value": "10.0.0.1"
+        },
+        {
+            "type": "ipv4-addr",
+            "spec_version": "2.1",
+            "id": "ipv4-addr--508ab548-b124-517b-82ea-23ed7286f827",
+            "value": "0.0.0.1"
+        },
+        {
+            "type": "network-traffic",
+            "spec_version": "2.1",
+            "id": "network-traffic--6fcdd082-e52c-5247-9bcd-f27a6144e733",
+            "src_ref": "ipv4-addr--7dd44d27-f473-5ba9-b12b-0d3a61bbed2e",
+            "dst_ref": "ipv4-addr--508ab548-b124-517b-82ea-23ed7286f827",
+            "dst_port": 80,
+            "protocols": [
+                "tcp"
+            ]
+        },
+        {
+            "type": "software",
+            "spec_version": "2.1",
+            "id": "software--dc4b4917-7f79-52cd-8dab-63384d36c8ae",
+            "name": "Firewall",
+            "version": "11.4.4"
+        },
+        {
+            "type": "campaign",
+            "spec_version": "2.1",
+            "id": "campaign--a9c5d7f3-36f6-4e85-8286-4d39d67e4ec6",
+            "created": "2022-12-28T05:25:20.6999Z",
+            "modified": "2022-12-28T05:25:20.6999Z",
+            "name": "Remote Access Login"
+        },
+        {
+            "type": "note",
+            "spec_version": "2.1",
+            "id": "note--b663fd23-0d91-419d-a41c-7427a1567b11",
+            "created": "2022-12-28T05:25:20.6999Z",
+            "modified": "2022-12-28T05:25:20.6999Z",
+            "abstract": "",
+            "content": "content",
+            "object_refs": [
+                "ipv4-addr--7dd44d27-f473-5ba9-b12b-0d3a61bbed2e",
+                "ipv4-addr--508ab548-b124-517b-82ea-23ed7286f827",
+                "network-traffic--6fcdd082-e52c-5247-9bcd-f27a6144e733",
+                "software--dc4b4917-7f79-52cd-8dab-63384d36c8ae",
+                "campaign--a9c5d7f3-36f6-4e85-8286-4d39d67e4ec6"
+            ]
+        }
+    ]
+}

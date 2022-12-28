@@ -1,0 +1,74 @@
+{
+    "type": "bundle",
+    "id": "bundle--32f4161e-61d1-4ec6-84ab-8bce0ddf675d",
+    "objects": [
+        {
+            "type": "ipv4-addr",
+            "spec_version": "2.1",
+            "id": "ipv4-addr--7dd44d27-f473-5ba9-b12b-0d3a61bbed2e",
+            "value": "10.0.0.1"
+        },
+        {
+            "type": "ipv4-addr",
+            "spec_version": "2.1",
+            "id": "ipv4-addr--508ab548-b124-517b-82ea-23ed7286f827",
+            "value": "0.0.0.1"
+        },
+        {
+            "type": "email-addr",
+            "spec_version": "2.1",
+            "id": "email-addr--82659442-1023-58e0-8ba8-b51f86fb2949",
+            "value": "user@example.com"
+        },
+        {
+            "type": "network-traffic",
+            "spec_version": "2.1",
+            "id": "network-traffic--6fcdd082-e52c-5247-9bcd-f27a6144e733",
+            "src_ref": "ipv4-addr--7dd44d27-f473-5ba9-b12b-0d3a61bbed2e",
+            "dst_ref": "ipv4-addr--508ab548-b124-517b-82ea-23ed7286f827",
+            "dst_port": 80,
+            "protocols": [
+                "tcp"
+            ]
+        },
+        {
+            "type": "user-account",
+            "spec_version": "2.1",
+            "id": "user-account--ba8ef4dd-e0cf-5016-b33a-b5dd5ee03c79",
+            "account_login": "user@example.com",
+            "display_name": "user@example.com"
+        },
+        {
+            "type": "domain-name",
+            "spec_version": "2.1",
+            "id": "domain-name--3b96539c-807f-59c9-b4df-fe1865757b1e",
+            "value": "www.example.com"
+        },
+        {
+            "type": "campaign",
+            "spec_version": "2.1",
+            "id": "campaign--e8cea228-beeb-4197-9866-2a04f2b7054b",
+            "created": "2022-12-28T05:25:20.693947Z",
+            "modified": "2022-12-28T05:25:20.693947Z",
+            "name": "Admin Login"
+        },
+        {
+            "type": "note",
+            "spec_version": "2.1",
+            "id": "note--4713d200-1139-48b8-889e-2e6b8645ba7f",
+            "created": "2022-12-28T05:25:20.693947Z",
+            "modified": "2022-12-28T05:25:20.693947Z",
+            "abstract": "",
+            "content": "content",
+            "object_refs": [
+                "ipv4-addr--7dd44d27-f473-5ba9-b12b-0d3a61bbed2e",
+                "ipv4-addr--508ab548-b124-517b-82ea-23ed7286f827",
+                "email-addr--82659442-1023-58e0-8ba8-b51f86fb2949",
+                "network-traffic--6fcdd082-e52c-5247-9bcd-f27a6144e733",
+                "user-account--ba8ef4dd-e0cf-5016-b33a-b5dd5ee03c79",
+                "domain-name--3b96539c-807f-59c9-b4df-fe1865757b1e",
+                "campaign--e8cea228-beeb-4197-9866-2a04f2b7054b"
+            ]
+        }
+    ]
+}

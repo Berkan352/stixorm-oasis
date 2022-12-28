@@ -1,0 +1,53 @@
+{
+    "type": "bundle",
+    "id": "bundle--02fa79e7-6e1b-45f9-9d60-a06d73be559d",
+    "objects": [
+        {
+            "type": "ipv4-addr",
+            "spec_version": "2.1",
+            "id": "ipv4-addr--7dd44d27-f473-5ba9-b12b-0d3a61bbed2e",
+            "value": "10.0.0.1"
+        },
+        {
+            "type": "ipv4-addr",
+            "spec_version": "2.1",
+            "id": "ipv4-addr--508ab548-b124-517b-82ea-23ed7286f827",
+            "value": "0.0.0.1"
+        },
+        {
+            "type": "network-traffic",
+            "spec_version": "2.1",
+            "id": "network-traffic--6fcdd082-e52c-5247-9bcd-f27a6144e733",
+            "src_ref": "ipv4-addr--7dd44d27-f473-5ba9-b12b-0d3a61bbed2e",
+            "dst_ref": "ipv4-addr--508ab548-b124-517b-82ea-23ed7286f827",
+            "dst_port": 80,
+            "protocols": [
+                "tcp"
+            ]
+        },
+        {
+            "type": "file",
+            "spec_version": "2.1",
+            "id": "file--56ccd5b7-db3b-5c1f-8123-0f7d810c2b68",
+            "hashes": {
+                "SHA-256": "c3af8ebec057bc62f27867718e7231878a2c2dde693e049c44d86fbef18f3593"
+            },
+            "name": "example.sh"
+        },
+        {
+            "type": "note",
+            "spec_version": "2.1",
+            "id": "note--0b6bf867-9363-41fa-8ef0-507e655fb920",
+            "created": "2022-12-28T05:25:20.703922Z",
+            "modified": "2022-12-28T05:25:20.703922Z",
+            "abstract": "",
+            "content": "content",
+            "object_refs": [
+                "ipv4-addr--7dd44d27-f473-5ba9-b12b-0d3a61bbed2e",
+                "ipv4-addr--508ab548-b124-517b-82ea-23ed7286f827",
+                "network-traffic--6fcdd082-e52c-5247-9bcd-f27a6144e733",
+                "file--56ccd5b7-db3b-5c1f-8123-0f7d810c2b68"
+            ]
+        }
+    ]
+}
