@@ -1,1 +1,75 @@
-{"type": "bundle", "id": "bundle--6e305016-ae74-4aef-98bf-58592d8d0742", "objects": [{"type": "ipv4-addr", "spec_version": "2.1", "id": "ipv4-addr--7dd44d27-f473-5ba9-b12b-0d3a61bbed2e", "value": "10.0.0.1"}, {"type": "ipv4-addr", "spec_version": "2.1", "id": "ipv4-addr--508ab548-b124-517b-82ea-23ed7286f827", "value": "0.0.0.1"}, {"type": "network-traffic", "spec_version": "2.1", "id": "network-traffic--6fcdd082-e52c-5247-9bcd-f27a6144e733", "src_ref": "ipv4-addr--7dd44d27-f473-5ba9-b12b-0d3a61bbed2e", "dst_ref": "ipv4-addr--508ab548-b124-517b-82ea-23ed7286f827", "dst_port": 80, "protocols": ["tcp"]}, {"type": "user-account", "spec_version": "2.1", "id": "user-account--ee35d56e-b167-56de-8f80-5d9efd0eb082", "user_id": "0", "account_login": "Administrator", "display_name": "Administrator"}, {"type": "domain-name", "spec_version": "2.1", "id": "domain-name--3b96539c-807f-59c9-b4df-fe1865757b1e", "value": "www.example.com"}, {"type": "campaign", "spec_version": "2.1", "id": "campaign--ec5586e7-60fc-4c73-b312-e3e1862610e9", "created": "2023-01-02T15:46:40.432024Z", "modified": "2023-01-02T15:46:40.432024Z", "name": "Admin Login"}, {"type": "note", "spec_version": "2.1", "id": "note--bd6de088-e397-4507-9bdb-a97bd7a69f3e", "created": "2023-01-02T15:46:40.433029Z", "modified": "2023-01-02T15:46:40.433029Z", "abstract": "", "content": "content", "object_refs": ["ipv4-addr--7dd44d27-f473-5ba9-b12b-0d3a61bbed2e", "ipv4-addr--508ab548-b124-517b-82ea-23ed7286f827", "network-traffic--6fcdd082-e52c-5247-9bcd-f27a6144e733", "user-account--ee35d56e-b167-56de-8f80-5d9efd0eb082", "domain-name--3b96539c-807f-59c9-b4df-fe1865757b1e", "campaign--ec5586e7-60fc-4c73-b312-e3e1862610e9"]}]}
+{
+    "type": "bundle",
+    "id": "bundle--cdba71e5-add2-42da-8149-cc8834de57f3",
+    "objects": [
+        {
+            "type": "ipv4-addr",
+            "spec_version": "2.1",
+            "id": "ipv4-addr--7dd44d27-f473-5ba9-b12b-0d3a61bbed2e",
+            "value": "10.0.0.1"
+        },
+        {
+            "type": "ipv4-addr",
+            "spec_version": "2.1",
+            "id": "ipv4-addr--508ab548-b124-517b-82ea-23ed7286f827",
+            "value": "0.0.0.1"
+        },
+        {
+            "type": "email-addr",
+            "spec_version": "2.1",
+            "id": "email-addr--819ce2e7-14a8-50d6-a69f-0359afc3b524",
+            "value": "admin@priam.com"
+        },
+        {
+            "type": "network-traffic",
+            "spec_version": "2.1",
+            "id": "network-traffic--6fcdd082-e52c-5247-9bcd-f27a6144e733",
+            "src_ref": "ipv4-addr--7dd44d27-f473-5ba9-b12b-0d3a61bbed2e",
+            "dst_ref": "ipv4-addr--508ab548-b124-517b-82ea-23ed7286f827",
+            "dst_port": 80,
+            "protocols": [
+                "tcp"
+            ]
+        },
+        {
+            "type": "user-account",
+            "spec_version": "2.1",
+            "id": "user-account--9bb69ea8-38db-5adb-a347-32e23fed64a6",
+            "user_id": "0",
+            "account_login": "admin@priam.com",
+            "display_name": "admin@priam.com"
+        },
+        {
+            "type": "domain-name",
+            "spec_version": "2.1",
+            "id": "domain-name--3b96539c-807f-59c9-b4df-fe1865757b1e",
+            "value": "www.example.com"
+        },
+        {
+            "type": "campaign",
+            "spec_version": "2.1",
+            "id": "campaign--63fde4e2-97a0-4f73-811f-7e34272ea47e",
+            "created": "2023-01-02T15:54:09.431528Z",
+            "modified": "2023-01-02T15:54:09.431528Z",
+            "name": "Admin Login"
+        },
+        {
+            "type": "note",
+            "spec_version": "2.1",
+            "id": "note--111f0a87-3821-4e35-9368-a47d58dbdc3a",
+            "created": "2023-01-02T15:54:09.431528Z",
+            "modified": "2023-01-02T15:54:09.431528Z",
+            "abstract": "",
+            "content": "content",
+            "object_refs": [
+                "ipv4-addr--7dd44d27-f473-5ba9-b12b-0d3a61bbed2e",
+                "ipv4-addr--508ab548-b124-517b-82ea-23ed7286f827",
+                "email-addr--819ce2e7-14a8-50d6-a69f-0359afc3b524",
+                "network-traffic--6fcdd082-e52c-5247-9bcd-f27a6144e733",
+                "user-account--9bb69ea8-38db-5adb-a347-32e23fed64a6",
+                "domain-name--3b96539c-807f-59c9-b4df-fe1865757b1e",
+                "campaign--63fde4e2-97a0-4f73-811f-7e34272ea47e"
+            ]
+        }
+    ]
+}
